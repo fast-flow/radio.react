@@ -1,6 +1,6 @@
 {
   "name": "radio.react",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "React,Radio.Custom style!",
   "repository": "fast-flow/radio.react",
   "homepage": "http://fast-flow.github.io/radio.react",
@@ -8,7 +8,7 @@
   "gitRepository": "radio.react",
   "dependencies": {
     "babel-polyfill": "^6.22.0",
-    "checkbox.react": "0.2.0",
+    "checkbox.react": "0.2.1",
     "classnames": "^2.2.5",
     "react": "0.14.8",
     "react-dom": "0.14.8"
