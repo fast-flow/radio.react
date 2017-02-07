@@ -896,9 +896,9 @@ charenc@~0.0.1:
   version "0.0.2"
   resolved "http://registry.npm.taobao.org/charenc/download/charenc-0.0.2.tgz#c0a1d2f3a7092e03774bfa83f14c0fc5790a8667"
 
-checkbox.react@0.2.0:
-  version "0.2.0"
-  resolved "http://registry.npm.taobao.org/checkbox.react/download/checkbox.react-0.2.0.tgz#085baa61cb3342abc8057f619c5cc65bc61e5750"
+checkbox.react@0.2.1:
+  version "0.2.1"
+  resolved "http://registry.npm.taobao.org/checkbox.react/download/checkbox.react-0.2.1.tgz#d48a3bfb08ef67d94ff22bfd3de6f462ed475b5b"
   dependencies:
     babel-polyfill "^6.22.0"
     classnames "^2.2.5"
