@@ -4,24 +4,41 @@ var App = React.createClass({
     render: function () {
         return (
             <div>
-                <Radio className="m-radio--s" /> m-radio--s
+                <label>
+                    <Radio className="m-radio--s" /> m-radio--s
+                </label>
                 <br/>
-                <Radio className="m-radio--s" checked="true" /> m-radio--s checked
+                <label>
+                    <Radio className="m-radio--s" checked="true" /> m-radio--s checked
+                </label>
                 <br/>
+                <label>
                 <Radio className="m-radio--s" disabled={true} checked="true" /> m-radio--s checked disabled
 
                 <hr/>
-                <Radio className="m-radio--m" /> m-radio--m
+                <label>
+                    <Radio className="m-radio--m" /> m-radio--m
+                </label>
                 <br/>
-                <Radio className="m-radio--m" checked="true" /> m-radio--m checked
+                <label>
+                    <Radio className="m-radio--m" checked="true" /> m-radio--m checked
+                </label>
                 <br/>
-                <Radio className="m-radio--m" disabled={true} checked="true" /> m-radio--m checked disabled
+                <label>
+                    <Radio className="m-radio--m" disabled={true} checked="true" /> m-radio--m checked disabled
+                </label>
                 <hr/>
-                <Radio className="m-radio--l" /> m-radio--l
+                <label>
+                    <Radio className="m-radio--l" /> m-radio--l
+                </label>
                 <br/>
-                <Radio className="m-radio--l" checked="true" /> m-radio--l checked
+                <label>
+                    <Radio className="m-radio--l" checked="true" /> m-radio--l checked
+                </label>
                 <br/>
-                <Radio className="m-radio--l" disabled={true} checked="true" /> m-radio--l checked disabled
+                <label>
+                    <Radio className="m-radio--l" disabled={true} checked="true" /> m-radio--l checked disabled
+                </label>
             </div>
         )
     }
