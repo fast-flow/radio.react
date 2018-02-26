@@ -9,7 +9,7 @@
 <div class="face-one-intro">
     <div class="face-one-intro-title">radio.react</div>
     <h2 class="face-one-intro-desc">
-        Radio
+        单选框
     </h2>
     <div class="face-one-intro-tool">
         <a href="https://onface.github.io/radio.react" class="face-one-intro-btn face-one-intro-btn--primary mr-online-hide" >在线文档</a>
@@ -27,7 +27,7 @@
                     <img src="./doc/theme/media/cogwheel.svg" alt="" class="face-one-feature-item-photo">
                     <br />
                     <div class="face-one-feature-item-label">定制开发</div>
-                    <div class="face-one-feature-item-desc">提供底层接口便于二次开发</div>
+                    <div class="face-one-feature-item-desc">结构清晰的 less 样式文件</div>
                 </div>
             </td>
             <td align="center" >
@@ -42,8 +42,8 @@
                 <div class="face-one-feature-item">
                     <img src="./doc/theme/media/share.svg" alt="" class="face-one-feature-item-photo">
                     <br />
-                    <div class="face-one-feature-item-label">逻辑封装</div>
-                    <div class="face-one-feature-item-desc">提供业务逻辑封装，快速开发</div>
+                    <div class="face-one-feature-item-label">场景丰富</div>
+                    <div class="face-one-feature-item-desc">自带单选框常用的表现形式</div>
                 </div>
             </td>
         </tr>

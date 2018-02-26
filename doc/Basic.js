@@ -4,7 +4,10 @@ class Basic extends React.Component {
     render () {
         return (
             <div className="basicDemo" >
-                <Radio />
+	            <label>
+	                <Radio />
+	                basic
+                </label>
             </div>
         )
     }
