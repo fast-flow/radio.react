@@ -11,36 +11,28 @@ class Basic extends React.Component {
         let self = this
         return (
             <div className="basicDemo" >
-                <label>
-                    <Radio  checked={self.state.basic === 'a'} 
-                            onChange={function (e) {
-                                self.setState({
-                                    basic: 'a'
-                                })
-                            }} 
-                    />
-                    <span>radio</span>
-                </label>
-                <label>
-                    <Radio checked={self.state.basic === 'b'} 
-                            onChange={function (e) {
-                                self.setState({
-                                    basic: 'b'
-                                })
-                            }} 
-                    />
-                    <span>radio</span>
-                </label>
+                <Radio  checked={self.state.basic === 'a'} 
+                        onChange={function (e) {
+                            self.setState({
+                                basic: 'a'
+                            })
+                        }} 
+                >radio</Radio>
+                <Radio checked={self.state.basic === 'b'} 
+                        onChange={function (e) {
+                            self.setState({
+                                basic: 'b'
+                            })
+                        }} 
+                >radio</Radio>
                 <hr/>
-                <label>
-                    <Radio checked={self.state.disabledChecked} disabled={true} />
-                    <span>disabled | checked:true</span>
-                </label>
+                <Radio checked={self.state.disabledChecked} 
+                        disabled={true} 
+                >disabled | checked:true</Radio>
                 <hr/>
-                <label>
-                    <Radio checked={self.state.disabledFalseChecked} disabled={true} />
-                    <span>disabled | checked: false</span>
-                </label>
+                <Radio checked={self.state.disabledFalseChecked} 
+                        disabled={true} 
+                >disabled | checked: false</Radio>
             </div>
         )
     }
