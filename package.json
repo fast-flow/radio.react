@@ -1,7 +1,7 @@
 {
   "name": "radio.react",
   "main": "lib/index.js",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Radio",
   "keywords": "",
   "scripts": {
@@ -18,7 +18,7 @@
   "$username": "onface",
   "$repository": "radio.react",
   "dependencies": {
-    "checkbox.react": "^0.3.5",
+    "checkbox.react": "^0.3.7",
     "extend": "^3.0.1",
     "prop-types": "^15.6.0",
     "util.react": "^1.4.1"
