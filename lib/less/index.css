@@ -285,24 +285,30 @@
 .face-radio--focus.face-radio--checked .face-radio-switch-icon {
   box-shadow: 0 0 0 0.125em rgba(45, 140, 240, 0.2);
 }
+.face-radio.face-radio--disabled,
 .face-radio--disabled,
 .face-radio--disabled.face-radio--checked {
   cursor: not-allowed;
 }
+.face-radio.face-radio--disabled:hover .face-radio-switch-icon,
 .face-radio--disabled:hover .face-radio-switch-icon,
 .face-radio--disabled.face-radio--checked:hover .face-radio-switch-icon,
+.face-radio.face-radio--disabled .face-radio-switch-icon,
 .face-radio--disabled .face-radio-switch-icon,
 .face-radio--disabled.face-radio--checked .face-radio-switch-icon {
   border-color: #cccccc;
   background-color: #eeeeee;
   box-shadow: inset 0px 1px 1px #DEDEDE;
 }
+.face-radio.face-radio--disabled:hover .face-radio-switch-icon:before,
 .face-radio--disabled:hover .face-radio-switch-icon:before,
 .face-radio--disabled.face-radio--checked:hover .face-radio-switch-icon:before,
+.face-radio.face-radio--disabled .face-radio-switch-icon:before,
 .face-radio--disabled .face-radio-switch-icon:before,
 .face-radio--disabled.face-radio--checked .face-radio-switch-icon:before {
   background-color: #aaaaaa;
 }
+.face-radio.face-radio--disabled .face-radio-label,
 .face-radio--disabled .face-radio-label,
 .face-radio--disabled.face-radio--checked .face-radio-label {
   color: rgba(0, 0, 0, 0.45);

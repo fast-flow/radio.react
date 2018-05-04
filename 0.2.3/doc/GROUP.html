@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<link rel="stylesheet" href="theme/face/face.css">
+<meta name="keywords" content="">
+<meta name="description" content="文档">
+<title>文档</title>
+</head>
+<body>
+<div class="face-one-head">
+    <a class="face-one-head-logo" href="../index.html">
+        <img src="theme/media/logo.svg" alt="" class="face-one-head-logo-photo" />
+        face
+    </a>
+    <span class="face-one-head-slogan">
+        Write less code, do more things!
+    </span>
+    <!-- <div class="face-one-head-search">
+        <span class="face-one-head-search-icon fi fi-search"></span>
+        <input type="text" class="face-one-head-search-input" placeholder="搜索..." />
+    </div> -->
+    <div class="face-one-head-nav">
+        <span class="face-one-head-nav-switch fi fi-bars"></span>
+        <div class="face-one-head-nav-F-cnt">
+            <a href="../index.html" class="face-one-head-nav-link">首页</a>
+            <a href="intro.html" class="face-one-head-nav-link">指引</a>
+            <a href="index.html" class="face-one-head-nav-link">文档</a>
+            <a href="API.html" class="face-one-head-nav-link">API</a>
+        </div>
+        <script>
+        Array.from(document.querySelectorAll('.face-one-head-nav-link')).forEach(function (node) {
+            if (node.href) {
+                var pathname = node.href.replace(/\?.*/, '')
+                if (pathname === location.origin + location.pathname) {
+                    node.setAttribute('class', node.getAttribute('class') + ' ' + 'face-one-head-nav-link--on')
+                }
+            }
+        })
+        </script>
+    </div>
+</div>
+
+<div class="face-one-layout">
+<div class="face-one-layout-F-line">
+<div class="face-one-layout-sidebar">
+<div class="face-one-nav">
+<span class="face-one-nav-switch fi fi-angle-double-right"></span>
+<div class="face-one-nav-F-inner">
+<div class="face-one-nav-item">
+    <a href="intro.html" class="face-one-nav-item-label">指引</a>
+</div>
+<!-- <div class="face-one-nav-item">
+    <a href="index.html" class="face-one-nav-item-label">文档</a>
+</div> -->
+<!-- face-one-nav-item--group-on 控制默认展开 -->
+<div class="face-one-nav-item face-one-nav-item--group face-one-nav-item--group-on">
+    <span class="face-one-nav-item-switch fi fi-down"></span>
+    <span class="face-one-nav-item-label">
+        文档
+    </span>
+    <div class="face-one-nav-item-group">
+        <div class="face-one-nav-item-group-title">radio</div>
+        <a href="index.html#basic" class="face-one-nav-item-group-item">basic</a>
+        <a href="index.html#size" class="face-one-nav-item-group-item">size</a>
+        <a href="index.html#themes" class="face-one-nav-item-group-item">custom-themes</a>
+        <a href="index.html#pcls" class="face-one-nav-item-group-item">prefixClassName</a>
+    </div>
+    <div class="face-one-nav-item-group">
+        <div class="face-one-nav-item-group-title">radioGroup</div>
+        <a href="GROUP.html#basic" class="face-one-nav-item-group-item">basic</a>
+        <a href="GROUP.html#style" class="face-one-nav-item-group-item">style</a>
+        <a href="GROUP.html#size" class="face-one-nav-item-group-item">size</a>
+    </div>
+</div>
+<div class="face-one-nav-item">
+    <a href="API.html" class="face-one-nav-item-label">API</a>
+</div>
+</div>
+</div>
+</div>
+<div class="face-one-layout-cnt">
+<div id="face-one-cnt" class="face-one-cnt markdown-body">
+<div id="face-one-sidebar" class="face-one-sidebar"></div>
+<h1 id="文档" ><a class="markrun-anchor" href="../Users/GrifreeMac/Documents/github/onface/radio.react/#文档"><span class="markrun-anchor-link"></span></a>文档</h1><h2 id="basic" ><a class="markrun-anchor" href="../Users/GrifreeMac/Documents/github/onface/radio.react/#basic"><span class="markrun-anchor-link"></span></a>basic</h2>
+    <div class="face-one-code  ">
+                        <div class="face-one-code-F-view">
+                            <div class="face-one-code-example">
+                                <div id="group-demo" ></div>
+                            </div>
+                            <div class="face-one-code-info">
+                                <div class="face-one-code-info-title">基础使用</div>
+                                <div class="face-one-code-info-desc">
+                                    <p><strong>markdown</strong></p>
+                                </div>
+                                <span class="face-one-code-info-switchCode fi fi-code"></span>
+                            </div>
+                        </div>
+                        <div class="face-one-code-source">
+                            <div class="face-one-code-source-tool">
+                                <span class="face-one-code-source-tool-copy fi fi-files-o"></span>
+                            </div>
+                            <pre><code class="lang-js"><span class="hljs-keyword">var</span> React = <span class="hljs-built_in">require</span>(<span class="hljs-string">'react'</span>)
+<span class="hljs-keyword">var</span> Radio = <span class="hljs-built_in">require</span>(<span class="hljs-string">'radio.react'</span>)
+<span class="hljs-keyword">var</span> { RadioGroup } = Radio
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GroupBasic</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
+    <span class="hljs-keyword">constructor</span>(props){
+        <span class="hljs-keyword">super</span>(props)
+        <span class="hljs-keyword">this</span>.state = {
+            <span class="hljs-attr">basic</span>: <span class="hljs-string">'c'</span>
+        }
+    }
+    render () {
+        <span class="hljs-keyword">let</span> self = <span class="hljs-keyword">this</span>
+        <span class="hljs-keyword">return</span> (
+            <span class="xml"><span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">className</span>=<span class="hljs-string">"groupBasicDemo"</span> &gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">RadioGroup</span> 
+                    <span class="hljs-attr">name</span>=<span class="hljs-string">"groupBasic"</span>
+                    <span class="hljs-attr">value</span>=<span class="hljs-string">{self.state.basic}</span>
+                    <span class="hljs-attr">onChange</span>=<span class="hljs-string">{function(value){</span>
+                        <span class="hljs-attr">console.log</span>(<span class="hljs-attr">value</span>)
+                        <span class="hljs-attr">self.setState</span>({
+                            <span class="hljs-attr">basic</span> <span class="hljs-attr">:</span> <span class="hljs-attr">value</span>
+                        })
+                    }}
+                &gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Radio</span> <span class="hljs-attr">value</span>=<span class="hljs-string">{</span>'<span class="hljs-attr">a</span>'} &gt;</span>radio<span class="hljs-tag">&lt;/<span class="hljs-name">Radio</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Radio</span> <span class="hljs-attr">value</span>=<span class="hljs-string">{</span>'<span class="hljs-attr">b</span>'} &gt;</span>radio<span class="hljs-tag">&lt;/<span class="hljs-name">Radio</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Radio</span> <span class="hljs-attr">value</span>=<span class="hljs-string">{</span>'<span class="hljs-attr">c</span>'} <span class="hljs-attr">disabled</span>=<span class="hljs-string">{true}</span> &gt;</span>disabled | checked:true<span class="hljs-tag">&lt;/<span class="hljs-name">Radio</span>&gt;</span>
+                    <span class="hljs-tag">&lt;<span class="hljs-name">Radio</span> <span class="hljs-attr">value</span>=<span class="hljs-string">{</span>'<span class="hljs-attr">d</span>'} <span class="hljs-attr">disabled</span>=<span class="hljs-string">{true}</span> &gt;</span>disabled | checked: false<span class="hljs-tag">&lt;/<span class="hljs-name">Radio</span>&gt;</span>
+                <span class="hljs-tag">&lt;/<span class="hljs-name">RadioGroup</span>&gt;</span>
+            <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span></span>
+        )
+    }
+}
+
+<span class="hljs-built_in">module</span>.exports = GroupBasic
+
+
+</code></pre>
+                        </div>
+                        
+                    </div>
+                                
+<h2 id="style" ><a class="markrun-anchor" href="../Users/GrifreeMac/Documents/github/onface/radio.react/#style"><span class="markrun-anchor-link"></span></a>style</h2>
+    <div class="face-one-code  ">
+                        <div class="face-one-code-F-view">
+                            <div class="face-one-code-example">
+                                <div id="group-style-demo" ></div>
+                            </div>
+                            <div class="face-one-code-info">
+                                <div class="face-one-code-info-title">基础使用</div>
+                                <div class="face-one-code-info-desc">
+                                    <p><strong>markdown</strong></p>
+                                </div>
+                                <span class="face-one-code-info-switchCode fi fi-code"></span>
+                            </div>
+                        </div>
+                        <div class="face-one-code-source">
+                            <div class="face-one-code-source-tool">
+                                <span class="face-one-code-source-tool-copy fi fi-files-o"></span>
+                            </div>
+                            <pre><code class="lang-js"><span class="hljs-keyword">var</span> React = <span class="hljs-keyword">require</span>(<span class="hljs-string">'react'</span>)
+<span class="hljs-keyword">var</span> Radio = <span class="hljs-keyword">require</span>(<span class="hljs-string">'radio.react'</span>)
+<span class="hljs-keyword">var</span> { RadioGroup } = Radio
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">GroupStyle</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">React</span>.<span class="hljs-title">Component</span> </span>{
+    constructor(props){
+        super(props)
+        this.state = {
+            horiz: <span class="hljs-keyword">false</span> ,
+            border: <span class="hljs-keyword">true</span> ,
+            separate: <span class="hljs-keyword">false</span> ,
+            hideicon: <span class="hljs-keyword">true</span> ,
+            basic: <span class="hljs-string">'c'</span>
+        }
+    }
+    render () {
+        <span class="hljs-keyword">let</span> <span class="hljs-keyword">self</span> = this
+        <span class="hljs-keyword">return</span> (
+            &lt;div className=<span class="hljs-string">"groupBasicDemo"</span> &gt;
+                style <span class="hljs-keyword">default</span> : 
+                &lt;label&gt;
+                    &lt;input type=<span class="hljs-string">"checkbox"</span> checked={<span class="hljs-keyword">self</span>.state.horiz} onChange={()=&gt;{ <span class="hljs-keyword">self</span>.setState({horiz:!<span class="hljs-keyword">self</span>.state.horiz}) }} /&gt;
+                    horiz
+                &lt;/label&gt;
+                &lt;label&gt;
+                    &lt;input type=<span class="hljs-string">"checkbox"</span> checked={<span class="hljs-keyword">self</span>.state.border} onChange={()=&gt;{ <span class="hljs-keyword">self</span>.setState({border:!<span class="hljs-keyword">self</span>.state.border}) }} /&gt;
+                    border
+                &lt;/label&gt;
+                &lt;label&gt;
+                    &lt;input type=<span class="hljs-string">"checkbox"</span> checked={<span class="hljs-keyword">self</span>.state.separate} onChange={()=&gt;{ <span class="hljs-keyword">self</span>.setState({separate:!<span class="hljs-keyword">self</span>.state.separate}) }} /&gt;
+                    separate
+                &lt;/label&gt;
+                &lt;label&gt;
+                    &lt;input type=<span class="hljs-string">"checkbox"</span> checked={<span class="hljs-keyword">self</span>.state.hideicon} onChange={()=&gt;{ <span class="hljs-keyword">self</span>.setState({hideicon:!<span class="hljs-keyword">self</span>.state.hideicon}) }} /&gt;
+                    hideicon
+                &lt;/label&gt;
+                &lt;hr /&gt;
+                组件显示 : &lt;br/&gt;
+
+                &lt;RadioGroup 
+                    name=<span class="hljs-string">"groupStyle"</span>
+                    value={<span class="hljs-keyword">self</span>.state.basic}
+                    onChange={<span class="hljs-function"><span class="hljs-keyword">function</span><span class="hljs-params">(value)</span></span>{
+                        console.log(value)
+                        <span class="hljs-keyword">self</span>.setState({
+                            basic : value
+                        })
+                    }}
+                    horiz={<span class="hljs-keyword">self</span>.state.horiz}
+                    border={<span class="hljs-keyword">self</span>.state.border}
+                    separate={<span class="hljs-keyword">self</span>.state.separate}
+                    hideicon={<span class="hljs-keyword">self</span>.state.hideicon}
+                &gt;
+                    &lt;Radio value={<span class="hljs-string">'a'</span>} &gt;radio&lt;/Radio&gt;
+                    &lt;Radio value={<span class="hljs-string">'b'</span>} &gt;radio&lt;/Radio&gt;
+                    &lt;Radio value={<span class="hljs-string">'c'</span>} disabled={<span class="hljs-keyword">true</span>} &gt;disabled | checked:<span class="hljs-keyword">true</span>&lt;/Radio&gt;
+                    &lt;Radio value={<span class="hljs-string">'d'</span>} disabled={<span class="hljs-keyword">true</span>} &gt;disabled | checked: <span class="hljs-keyword">false</span>&lt;/Radio&gt;
+                &lt;/RadioGroup&gt;
+            &lt;/div&gt;
+        )
+    }
+}
+
+module.exports = GroupStyle
+
+
+</code></pre>
+                        </div>
+                        
+                    </div>
+                                
+<h2 id="size" ><a class="markrun-anchor" href="../Users/GrifreeMac/Documents/github/onface/radio.react/#size"><span class="markrun-anchor-link"></span></a>size</h2><blockquote>
+<p>更改方式 <a href="../Users/GrifreeMac/Documents/github/onface/radio.react/index.html#size">参考</a></p>
+</blockquote></div>
+</div>
+</div>
+</div>
+<script>
+Array.from(document.querySelectorAll('.face-one-nav-item-label')).forEach(function (node) {
+    if (node.href) {
+        var pathname = node.href.replace(/\?.*/, '')
+        if (pathname === location.origin + location.pathname + location.hash) {
+            node.setAttribute('class', node.getAttribute('class') + ' ' + 'face-one-nav-item-label--on')
+        }
+    }
+})
+var faceOneGetParent = function faceOneGetParent (el, className) {
+   if (el.parentNode.nodeName.toLowerCase() === 'html') {
+       return null
+   }
+   var parentClassName = el.parentNode.getAttribute('class')
+   var classNames = ''
+   if (parentClassName) {
+       classNames = parentClassName.split(' ')
+   }
+   if (classNames.indexOf(className) !== -1) {
+       return el.parentNode
+   }
+   else {
+       return faceOneGetParent(el.parentNode, className)
+   }
+}
+Array.from(document.querySelectorAll('.face-one-nav-item-group-item')).forEach(function (node) {
+    addAvativeClass(node)
+    function addAvativeClass (node)  {
+        if (node.href) {
+            var pathname = node.href.replace(/\?.*/, '')
+            if (pathname === location.origin + location.pathname + location.hash) {
+                node.setAttribute('class', node.getAttribute('class') + ' ' + 'face-one-nav-item-group-item--on')
+                var parentNode = faceOneGetParent(node, 'face-one-nav-item--group')
+                if (parentNode) {
+                    parentNode.setAttribute('class', parentNode.getAttribute('class') + ' ' + 'face-one-nav-item--group-on')
+                }
+            }
+        }
+    }
+
+})
+</script>
+<div class="face-one-foot">
+    <div class="face-one-foot-F-inner">
+        <div class="face-one-foot-group">
+            <div class="face-one-foot-group-title">
+                <span class="face-one-foot-group-title-icon fi fi-github"></span>
+                Github
+            </div>
+            <div class="face-one-foot-group-item">
+                <a href="https://github.com/onface/radio.react" class="face-one-foot-group-item-link">radio.react</a>
+                - 项目源码
+            </div>
+        </div>
+        <div class="face-one-foot-group">
+            <div class="face-one-foot-group-title">
+                <span class="face-one-foot-group-title-icon fi fi-link"></span>
+                相关站点
+            </div>
+            <div class="face-one-foot-group-item">
+                <a href="https://onface.github.io/component-spec">component-spec</a>
+                - 组件规范
+            </div>
+            <div class="face-one-foot-group-item">
+                <a href="https://github.com/onface/module" class="face-one-foot-group-item-link">module</a>
+                - 开源项目脚手架
+            </div>
+            <div class="face-one-foot-group-item">
+                <a href="http://onface.cc/" class="face-one-foot-group-item-link">onface.cc</a>
+                - 资源集合
+            </div>
+        </div>
+        <div class="face-one-foot-group">
+            <div class="face-one-foot-group-title">
+                <span class="face-one-foot-group-title-icon fi fi-team"></span>
+                社区
+            </div>
+            <div class="face-one-foot-group-item">
+                <a href="https://github.com/onface/radio.react/issues" class="face-one-foot-group-item-link">Github issues</a>
+            </div>
+            <div class="face-one-foot-group-item">
+                <a href="https://github.com/onface/radio.react/issues/new" class="face-one-foot-group-item-link">提交bug</a>
+            </div>
+        </div>
+        <div class="face-one-foot-copyright">
+            <a href="../index.html" class="face-one-foot-copyright-title">
+                <img src="theme/media/logo.svg" class="face-one-foot-copyright-title-logo" />
+            </a>
+        </div>
+    </div>
+</div>
+
+<script src="theme/jquery.js"></script>
+<script>delete window.$</script>
+<script src="theme/face/face.js" ></script>
+<script data-markrun-lastrun="true">
+                        document.write('<scri' + 'pt src="./group.demo.js?v=0.2.1"' + '" ></sc' + 'ript>')
+                        </script><script data-markrun-lastrun="true">
+                        document.write('<scri' + 'pt src="./groupstyle.demo.js?v=0.2.1"' + '" ></sc' + 'ript>')
+                        </script></body>
+</html>
