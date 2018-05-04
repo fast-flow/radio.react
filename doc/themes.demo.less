@@ -1,28 +1,18 @@
-@import "./settings.less";
+// from file '/lib/less/settings.less'
+@prefix: face-radio;
 
-.faceRadioCheckedInnerStyle() {
-    height: 0.25em;
-    width: 0.25em;
-    top: 0; left: 0; right: 0; bottom: 0;
-    border-radius: 50%;
-    margin:auto;
-}
+// set custom color
+@face-radio-border-red-color: rgba(210, 20, 60, 1);
+@face-radio-shadow-red-color: rgba(210, 20, 60, 0.2);
 
-.faceRadioAnimation() {
-    -webkit-transition: all .2s;
-       -moz-transition: all .2s;
-        -ms-transition: all .2s;
-         -o-transition: all .2s;
-            transition: all .2s;
-}
-
+// from file '/lib/less/extend.less'
 .faceRadioStyle(@border, @shadow) {
 	&.@{prefix}:hover .@{prefix}-switch-icon {
         border-color: @border;
         box-shadow: inset 0 1px 1px @shadow;
     }
     &.@{prefix}--checked {
-        &:hover .@{prefix}-switch-icon ,
+    	&:hover .@{prefix}-switch-icon ,
 	    .@{prefix}-switch-icon {
 	        background-color: @border;
 	        border-color: @border;
@@ -35,4 +25,9 @@
 	        box-shadow: 0 0 0 0.125em @shadow;
 	    }
 	}
+}
+
+// apply custom color
+.@{prefix}--themes-red {
+    .faceRadioStyle(@face-radio-border-red-color, @face-radio-shadow-red-color);
 }

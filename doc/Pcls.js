@@ -2,18 +2,17 @@ var React = require('react')
 var Radio = require('radio.react')
 
 // 引入复制后修改样式
-import './themes.demo.less';
-
+import './pcls.demo.less/index.less';
 class MyRadio extends React.Component {
     render () {
         return (
-            <Radio themes="red" {...this.props} />
+            <Radio {...this.props} prefixClassName="myradio" />
         )
     }
 }
 
 
-class Themes extends React.Component {
+class Pcls extends React.Component {
 	constructor(props){
 		super(props)
 		this.state = {
@@ -39,16 +38,16 @@ class Themes extends React.Component {
                         }} 
                 >radio</MyRadio>
                 <hr/>
-                <MyRadio checked={true} 
+                <MyRadio checked={self.state.disabledChecked} 
                         disabled={true} 
                 >disabled | checked:true</MyRadio>
                 <hr/>
-                <MyRadio checked={false} 
+                <MyRadio checked={self.state.disabledFalseChecked} 
                         disabled={true} 
                 >disabled | checked: false</MyRadio>
             </div>
         )
     }
 }
-/*ONFACE-DEL*/Themes = require("react-hot-loader").hot(module)(Themes)
-module.exports = Themes
+/*ONFACE-DEL*/Pcls = require("react-hot-loader").hot(module)(Pcls)
+module.exports = Pcls
