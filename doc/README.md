@@ -14,6 +14,20 @@
 }
 ````
 
+## before
+
+````code
+{
+    title: '基础使用',
+    desc: '**markdown**',
+    html: '<div id="before-demo" ></div>',
+    js: './before.demo.js',
+    source: './Before.js',
+    horiz: true,
+    open: false
+}
+````
+
 ## size
 
 ````code
@@ -30,7 +44,7 @@
 
 ## themes
 
-1. 也可以参考`themes.demo.less`仅加部分代码修改 
+1. 可以参考`themes.demo.less`仅加部分代码修改 
 
 ````code
 {
@@ -49,7 +63,7 @@
     open: false
 }
 ````
-2. 可以全部复制样式文件后做修改 [参考下面例子 prefixClassName](#prefixClassName)      
+2. 也可以全部复制样式文件后做修改 [参考下面例子 prefixClassName](#prefixClassName)      
 复制 [lib/less/](/lib/less/) 下的文件     
 添加 [lib/less/settings.less](/lib/less/settings.less) 部分或者其他代码。配置 `color`。       
 在 [lib/less/themes.less](/lib/less/themes.less) 文件中添加自定义主题 例:`/* xxx  (start) */` **`demo code`** `/* xxx  (end) */`    
@@ -64,7 +78,7 @@
 ````code
 {
     title: '多次封装',
-    desc: '此处另加了prefixClassName属性 是在示例中防止与组件自带样式重复覆盖',
+    desc: '',
     html: '<div id="pcls-demo" ></div>',
     js: './pcls.demo.js',
     source: './Pcls.js',

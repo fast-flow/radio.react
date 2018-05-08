@@ -1218,9 +1218,9 @@ check-error@^1.0.1:
   version "1.0.2"
   resolved "http://registry.npm.taobao.org/check-error/download/check-error-1.0.2.tgz#574d312edd88bb5dd8912e9286dd6c0aed4aac82"
 
-checkbox.react@^0.3.9:
-  version "0.3.9"
-  resolved "http://registry.npm.taobao.org/checkbox.react/download/checkbox.react-0.3.9.tgz#a24a050b75cd437b0f66b9f90cbc32286ab47746"
+checkbox.react@^0.3.10:
+  version "0.3.10"
+  resolved "http://registry.npm.taobao.org/checkbox.react/download/checkbox.react-0.3.10.tgz#123f563e70cfa52d52665749843bd05407244f6b"
   dependencies:
     classnames "^2.2.5"
     extend "^3.0.1"
