@@ -1,9 +1,9 @@
-@import "./settings.less";
-@import "./extend.less";
+@import './settings.less';
+@import './extend.less';
 
 // checked focus disabled 顺序不可更换
 .@{prefix}--checked {
-    .@{prefix}-switch-icon {
+    .@{prefix}-icon {
         background-color: @face-radio-active-color;
         border-color: @face-radio-active-color;
         box-shadow: none;
@@ -15,7 +15,7 @@
     }
 }
 .@{prefix}--focus.@{prefix}--checked {
-    .@{prefix}-switch-icon {
+    .@{prefix}-icon {
         @-webkit-keyframes checkedAnimate {
             0% {   opacity: 1; }
             30% {  transform: scale(0.01) ; opacity: 0; }
@@ -38,16 +38,19 @@
 }
 .@{prefix}--focus,
 .@{prefix}--focus.@{prefix}--checked {
-    &:hover .@{prefix}-switch-icon ,
-    .@{prefix}-switch-icon {
+    &:hover .@{prefix}-icon ,
+    .@{prefix}-icon {
         box-shadow: 0 0 0 0.125em @face-radio-shadow-active-color;
     }
 }
-.@{prefix}--disabled,
-.@{prefix}--disabled.@{prefix}--checked {
+html .@{prefix}--disabled,
+     .@{prefix}--disabled,
+html .@{prefix}--disabled.@{prefix}--checked,
+     .@{prefix}--disabled.@{prefix}--checked 
+{
     cursor: not-allowed;
-    &:hover .@{prefix}-switch-icon ,
-    .@{prefix}-switch-icon {
+    &:hover .@{prefix}-icon ,
+    .@{prefix}-icon {
         border-color:@face-radio-default-color;
         background-color:@face-radio-shadow-color;
         box-shadow: inset 0px 1px 1px #DEDEDE;
@@ -55,41 +58,4 @@
             background-color:@face-radio-icon-disable-color;
         }
     }
-    .@{prefix}-label {
-    	color: @face-radio-text-disable-color;
-    }
 }
-
-.@{prefix}Group--border {
-    .@{prefix}--checked {
-        z-index: 1;
-        border-color: @face-radio-active-color;
-        .@{prefix}-label {
-            color: @face-radio-active-color;
-        }
-    }
-    .@{prefix}--focus,
-    .@{prefix}--focus.@{prefix}--checked {
-        box-shadow: 0 0 0 .125em @face-radio-shadow-active-color;
-        &:hover .@{prefix}-switch-icon ,
-        .@{prefix}-switch-icon {
-            box-shadow: none;
-        }
-    }
-    .@{prefix}--disabled.@{prefix}--checked {
-        background-color:@face-radio-shadow-color;
-    }
-    .@{prefix}--disabled,
-    .@{prefix}--disabled.@{prefix}--checked {
-        z-index: 0;
-        border-color:@face-radio-default-color;
-        &:hover .@{prefix}-label,
-        .@{prefix}-label {
-            color: @face-radio-text-disable-color;
-        }
-    }
-}
-
-
-
-

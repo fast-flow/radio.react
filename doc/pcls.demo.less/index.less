@@ -1,29 +1,21 @@
-@import "./settings.less";
-@import "./extend.less";
+@import './settings.less';
+@import './extend.less';
 
-.@{prefix} { // calculate amount height 30
-    display: inline-block;
-    vertical-align: middle;
-    cursor: pointer;
-    position: relative;
-    
-    &:hover .@{prefix}-switch-icon {
-        border-color: @face-radio-active-color;
-        box-shadow: inset 0 1px 1px @face-radio-shadow-active-color;
-    }
-    .faceRadioAnimation();
-}
-.@{prefix}-switch {
+
+.@{prefix} {
     width: 1em;
     height: 1em;
     display: inline-block;
     vertical-align: middle;
     margin-right: .1875em;
     margin-left: .1875em;
+    cursor: pointer;
+    position: relative;
     .faceRadioAnimation();
+
 }
-.@{prefix}-switch-icon {
-    box-sizing: border-box;
+.@{prefix}-icon {
+	box-sizing: border-box;
     display: block;
     border: 1px solid @face-radio-default-color;
     border-radius: 50%;
@@ -54,7 +46,7 @@
     }
     .faceRadioAnimation();
 }
-.@{prefix}-switch-input {
+.@{prefix}-input {
     opacity: 0;
     filter:alpha(opacity=0);
     position: absolute;
@@ -63,121 +55,7 @@
     left: 0;right: 0;top: 0;bottom: 0;
     width: 100%; height: 100%; 
 }
-.@{prefix}-label {
-    font-size: 1em;
-    line-height: 1.875em;
-    padding-right: .3125em;
-    display: inline-block;
-    vertical-align: middle;
-    color: @face-radio-text-color;
-    cursor: inherit;
-    -webkit-transition: all .2s;
-       -moz-transition: all .2s;
-        -ms-transition: all .2s;
-         -o-transition: all .2s;
-            transition: all .2s;
-}
-
-.@{prefix}Group {
-    // display: inline-block;
-    display: flex;
-    display: inline-flex;
-    vertical-align: middle;
-    white-space: nowrap;
-    & + & {
-        margin-left: .625em;
-    }
-    .@{prefix} {
-        &:not(:first-child) {
-            margin-left: .625em;
-        }
-    }
-    .@{prefix}-label {
-        padding-right: 0;
-    }
-}
-    .@{prefix}Group--hideicon {
-        .@{prefix}-switch {
-            display: none;
-        }
-
-    }
-    .@{prefix}Group--border {
-        .@{prefix}-switch {
-            margin: 0;
-            padding-top: .375em;
-            padding-bottom: .375em;
-        }
-        .@{prefix}-label {
-            line-height: 1.8em;
-        }
-        .@{prefix} {
-            // align-items: flex-start;
-            display: inline-block;
-            border-radius: 0;
-            border: 1px solid #d9d9d9;
-            // padding-left: .3125em;
-            padding-left: 0.625em;
-            padding-right: 0.625em;
-            border-radius: 0;
-            &:first-child {
-                border-radius: .18em 0 0 .18em;
-            }
-            &:last-child {
-                border-radius: 0 .18em .18em 0;
-            }
-            &:not(:first-child) {
-                margin: 0 0 0 -1px;
-            }
-            &:hover .@{prefix}-label {
-                color: @face-radio-active-color;
-            }
-        }
-    }
-    .@{prefix}Group--separate {
-        .@{prefix} {
-            &,
-            &:first-child,
-            &:last-child {
-                border-radius: .18em;
-            }
-            &:not(:first-child) {
-                margin-left: .625em;
-            }
-        }
-    }
-    .@{prefix}Group--horiz {
-        display: inline-grid;
-        .@{prefix} {
-            &:first-child {
-                border-radius: .18em .18em 0 0;
-            }
-            &:last-child {
-                border-radius: 0 0 .18em .18em;
-            }
-            &:not(:first-child) {
-                margin: -1px 0 0 0 ;
-            }
-        }
-    }
-    .@{prefix}Group--separate.@{prefix}Group--horiz {
-        .@{prefix} {
-            &:first-child, 
-            &:last-child,
-            &:not(:first-child) {
-                border-radius: .18em;
-            }
-            &:not(:first-child) {
-                margin: .625em 0 0 0 ;
-            }
-        }
-    }
 
 
-
-
-// themes
-@import "./themes.less";
-
-// style
-@import "./style.less";
+@import './style.less';
+@import './themes.less';

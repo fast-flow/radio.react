@@ -5,11 +5,11 @@
 ````code
 {
     title: '基础使用',
-    desc: '**markdown**',
+    desc: '',
     html: '<div id="group-demo" ></div>',
-    js: './group.demo.js',
-    source: './Group.js',
-    open: false
+    source: './group.demo.js',
+    open: true,
+    side: true,
 }
 ````
 
@@ -18,11 +18,11 @@
 ````code
 {
     title: '基础使用',
-    desc: '**markdown**',
+    desc: '',
     html: '<div id="group-style-demo" ></div>',
-    js: './groupstyle.demo.js',
-    source: './GroupStyle.js',
-    open: false
+    source: './groupstyle.demo.js',
+    open: true,
+    side: true,
 }
 ````
 
