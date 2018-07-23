@@ -13,15 +13,3 @@
     run: false
 }
 ````
-
-## RadioGroup
-
-````code
-{
-    title: 'props api',
-    desc: '展示所有的接口默认参数，和参数数据类型',
-    source: '../lib/RadioGroupProps.js',
-    open: true,
-    run: false
-}
-````
